@@ -7,7 +7,8 @@
 // link();
 $(document).ready(function() {
     $.ajax({
-        url: "http://localhost:9000/api",
+        url: "/api",
+        //url: "http://localhost:9000/api",
         //headers: {  'Access-Control-Allow-Origin': 'http://localhost:9000/api'},
         method: "GET",
         type: "json",
