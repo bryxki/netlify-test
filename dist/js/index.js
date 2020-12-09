@@ -7,7 +7,7 @@
 // link();
 $(document).ready(function() {
     $.ajax({
-        url: "/api",
+        url: "/.netlify/functions/api",
         //url: "http://localhost:9000/api",
         //headers: {  'Access-Control-Allow-Origin': 'http://localhost:9000/api'},
         method: "GET",
