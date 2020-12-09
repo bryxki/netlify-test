@@ -7,8 +7,8 @@
 // link();
 $(document).ready(function() {
     $.ajax({
-        url: "https://sad-newton-07bc38.netlify.app/api",
-        //url: "http://localhost:9000/api",
+        //url: "https://sad-newton-07bc38.netlify.app/api",
+        url: "http://localhost:9000/.netlify/functions/api",
         //headers: {  'Access-Control-Allow-Origin': 'http://localhost:9000/api'},
         method: "GET",
         type: "json",
