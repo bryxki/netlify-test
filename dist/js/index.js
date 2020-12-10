@@ -1,15 +1,7 @@
-// const link = async () => {
-//     const res = await fetch('/api');
-//     const word = await res.text();
-//     document.getElementById('word').innerText = word;
-// };
-
-// link();
-$(document).ready(function() {
+jQuery(function() {
     $.ajax({
-        url: "https://sad-newton-07bc38.netlify.app/.netlify/functions/api",
-        //url: "http://localhost:9000/.netlify/functions/api",
-        //headers: {  'Access-Control-Allow-Origin': 'http://localhost:9000/api'},
+        //url: "https://sad-newton-07bc38.netlify.app/.netlify/functions/api",
+        url: "http://localhost:9000/.netlify/functions/api",
         method: "GET",
         type: "json",
         // crossDomain: true,
@@ -17,8 +9,8 @@ $(document).ready(function() {
         //data: {word : word},
         success: function(result)
         {
-            document.getElementById('word').innerText = result.word;
- 
+            //document.getElementById('word').innerText = result.word;
+            $('#word').text(result.word);
             console.log(result);
             console.log('success');
         },
