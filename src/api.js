@@ -33,7 +33,7 @@ router.get('/', (req,res) => {
         if(user){
             res.header("Access-Control-Allow-Origin", "*");
             res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-            res.status(200).send({'word' : user.email});
+            res.status(200).send({'word' : user.name});
         }else {        
             res.header("Access-Control-Allow-Origin", "*");
             res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
