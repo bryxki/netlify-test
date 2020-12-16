@@ -47,6 +47,10 @@ router.get('/', (req,res) => {
     //res.render('index', {title: 'Welcome to Netlify-Express!'}); 
 });
 
+router.get('/login', (req,res) => { 
+    res.status(200).send({'title' : 'login'});
+});
+
 router.get('/test', (req,res) => { 
     // res.json({
     //     'Hello' : 'test'

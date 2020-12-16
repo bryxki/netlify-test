@@ -1,7 +1,7 @@
 jQuery(function() {
     $.ajax({
-        url: "https://sad-newton-07bc38.netlify.app/.netlify/functions/api",
-        //url: "http://localhost:9000/.netlify/functions/api",
+        //url: "https://sad-newton-07bc38.netlify.app/.netlify/functions/api",
+        url: "http://localhost:9000/.netlify/functions/api",
         method: "GET",
         type: "json",
         // crossDomain: true,
