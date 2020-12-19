@@ -3,8 +3,8 @@ jQuery(function() {
     $('#login').on("submit", function(e) {
         e.preventDefault();
         $.ajax({
-            //url: "https://sad-newton-07bc38.netlify.app/.netlify/functions/api",
-            url: "http://localhost:9000/.netlify/functions/api/login",
+            url: "https://sad-newton-07bc38.netlify.app/.netlify/functions/api",
+            //url: "http://localhost:9000/.netlify/functions/api/login",
             method: "POST",
             type: "json",
             data: {email: $('#email').val(), password: $('#password').val()},
