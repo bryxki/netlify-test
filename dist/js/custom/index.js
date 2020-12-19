@@ -28,7 +28,7 @@ jQuery(function() {
     $('#register').on("submit", function(e) {
         e.preventDefault();
         $.ajax({
-            url: "https://sad-newton-07bc38.netlify.app/.netlify/functions/api",
+            url: "https://sad-newton-07bc38.netlify.app/.netlify/functions/api/register",
             //url: "http://localhost:9000/.netlify/functions/api/register",
             method: "POST",
             type: "json",
