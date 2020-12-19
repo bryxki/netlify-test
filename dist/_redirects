@@ -1,1 +1,2 @@
 /api /.netlify/functions/api.js 200
+/login /.netlify/functions/api/login 200
